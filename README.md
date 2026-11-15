@@ -28,7 +28,7 @@
 
 ## Решения
 
-Классы находятся в `src/main/java/ru/algorithms/tasks`:
+Файлы решений находятся в корне проекта:
 
 - `task_1` — рекурсивная сортировка слиянием.
 - `task_2` — подсчёт инверсий при слиянии.
@@ -40,15 +40,15 @@
 ## Запуск
 
 ```bash
-javac -encoding UTF-8 -d target/classes src/main/java/ru/algorithms/tasks/*.java
-java -cp target/classes ru.algorithms.tasks.task_1
+javac -encoding UTF-8 task_1.java task_2.java task_3.java
+java task_1
 ```
 
 Для других задач замените имя класса на `task_2` или `task_3`.
 
 ## Тесты
 
-Тесты находятся в `src/test/java/ru/algorithms/tasks`: `test_task_1.java`, `test_task_2.java`, `test_task_3.java`.
+Тесты находятся в корне проекта: `test_task_1.java`, `test_task_2.java`, `test_task_3.java`.
 Для их запуска используйте JUnit 5 в IDE или JUnit Platform Console с явным выбором этих классов.
 
 Простые JUnit 5 тесты проверяют примеры, пустой ввод (n = 0), повторяющиеся числа и стыки встреч.

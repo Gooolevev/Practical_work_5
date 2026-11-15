@@ -1,5 +1,3 @@
-package ru.algorithms.tasks;
-
 import java.io.*;
 import java.util.Scanner;
 

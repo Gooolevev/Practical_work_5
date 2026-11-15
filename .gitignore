@@ -1,0 +1,11 @@
+target/
+.idea/
+*.iml
+.vscode/
+.DS_Store
+
+out/
+*.class
+.agents/
+.aws/
+.codex/

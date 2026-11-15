@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 import java.util.Arrays;
 
-public class MaxConcurrentMeetingsTask {
+public class task_3 {
     public static void solve(InputStream in, OutputStream out) {
         Scanner scanner = new Scanner(in);
         int n = scanner.nextInt();

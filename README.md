@@ -1,6 +1,6 @@
 # Алгоритмы на Java
 
-Решения трёх задач. Требуется Java 17 или новее. Для запуска JUnit-тестов нужен Maven.
+Решения трёх задач. Требуется Java 17 или новее. Для запуска тестов нужен JUnit 5.
 
 ## 1. Сортировка слиянием
 
@@ -30,9 +30,9 @@
 
 Классы находятся в `src/main/java/ru/algorithms/tasks`:
 
-- `MergeSortTask` — рекурсивная сортировка слиянием.
-- `InversionsTask` — подсчёт инверсий при слиянии.
-- `MaxConcurrentMeetingsTask` — сортировка начал и окончаний, затем проход двумя указателями.
+- `task_1` — рекурсивная сортировка слиянием.
+- `task_2` — подсчёт инверсий при слиянии.
+- `task_3` — сортировка начал и окончаний, затем проход двумя указателями.
 
 Каждое решение работает за O(n log n) времени и использует O(n) дополнительной памяти.
 Метод `solve` принимает потоки ввода и вывода; `main` запускает решение в консоли.
@@ -41,15 +41,14 @@
 
 ```bash
 javac -encoding UTF-8 -d target/classes src/main/java/ru/algorithms/tasks/*.java
-java -cp target/classes ru.algorithms.tasks.MergeSortTask
+java -cp target/classes ru.algorithms.tasks.task_1
 ```
 
-Для других задач замените имя класса на `InversionsTask` или `MaxConcurrentMeetingsTask`.
+Для других задач замените имя класса на `task_2` или `task_3`.
 
 ## Тесты
 
-```bash
-mvn test
-```
+Тесты находятся в `src/test/java/ru/algorithms/tasks`: `test_task_1.java`, `test_task_2.java`, `test_task_3.java`.
+Для их запуска используйте JUnit 5 в IDE или JUnit Platform Console с явным выбором этих классов.
 
 Простые JUnit 5 тесты проверяют примеры, пустой ввод (n = 0), повторяющиеся числа и стыки встреч.

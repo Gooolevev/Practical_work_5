@@ -3,7 +3,7 @@ package ru.algorithms.tasks;
 import java.io.*;
 import java.util.Scanner;
 
-public class MergeSortTask {
+public class task_2 {
     // Сортируем диапазон [left, right) и считаем инверсии.
     private static long mergeSort(int[] a, int[] temp, int left, int right) {
         if (right - left < 2) return 0;
@@ -32,11 +32,7 @@ public class MergeSortTask {
         for (int i = 0; i < n; i++) a[i] = scanner.nextInt();
         long count = mergeSort(a, new int[n], 0, n);
         PrintWriter writer = new PrintWriter(out);
-        for (int i = 0; i < n; i++) {
-            if (i > 0) writer.print(" ");
-            writer.print(a[i]);
-        }
-        writer.println();
+        writer.println(count);
         writer.flush();
     }
 
